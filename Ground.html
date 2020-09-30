@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<head>
+<link rel="shortcut icon" href="http://www.innovativetyres.com/assets/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="C:\Users\Ankit\Desktop\Front End\Simply\backgroundcolorofcss.css">
+</head>
+<title>Ground</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>View Your Company</h2>
+  <div class="tooltip"><form>
+  <input type="button" value="View All Companies" onclick="msg()">
+</form>
+  <span class="tooltiptext">By Using this you can see all the companies available in our data base</span>
+</div>
+<div class="tooltip"><form>
+  <input type="button" value="View All Insights" onclick="msg()">
+</form>
+  <span class="tooltiptext">By Using this you can get Insights Of All the Company Availabe in Our Data Base</span>
+</div>
+
+  
+</div>
+
+<div class="w3-container">
+  <h2>Add your Company</h2>
+  <div class="tooltip"><form>
+  <input type="button" value="Crawl Your company" onclick="msg()">
+</form>
+  <span class="tooltiptext">To use this functionality your company Jobs Should be posted on Some ATS </span>
+</div>
+<div class="tooltip"><form>
+  <input type="button" value="See Your Company Insights" onclick="msg()">
+</form>
+  <span class="tooltiptext">By Using This You Can directly see insights of your company if it already exist in our data base </span>
+</div>
+<form>
+  <input type="button" value="Home" onclick="msg()">
+</form>
+  
+</div>
+
+</body>
+</html>

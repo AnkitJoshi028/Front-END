@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+    <link rel="shortcut icon" href="http://www.innovativetyres.com/assets/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Know How It Works</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankit\Desktop\Front End\Simply\reset.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankit\Desktop\Front End\Simply\style.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankit\Desktop\Front End\Simply\headcss.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankit\Desktop\Front End\Simply\backgroundcolorofcss.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+</head>
+<body onload="startTime()">
+<div id="txt"></div>
+<h1>Theory and on going improvements</h1>
+<button type="button" onclick="alert('Work in Progress!')">Theory</button>
+<h1>Developers Section</h1>
+<button type="button" onclick="alert('Work in Progress!')">Front End Code</button>
+<button type="button" onclick="alert('Work in Progress!')">Back End Code</button>
+</body>
+</html>
